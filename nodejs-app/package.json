@@ -1,0 +1,22 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelencinasr94/nodejs-app-harness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafaelencinasr94/nodejs-app-harness/issues"
+  },
+  "homepage": "https://github.com/rafaelencinasr94/nodejs-app-harness#readme"
+}
