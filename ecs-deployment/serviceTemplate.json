@@ -1,0 +1,20 @@
+{
+    "launchType": "FARGATE",
+    "serviceName": "myapp",
+    "desiredCount": 1,
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "securityGroups": [
+                "<+workspace.aws_terraform_ec2_test.ecs_sg_id>"
+            ],
+            "subnets": [
+                "<+workspace.aws_terraform_ec2_test.ecs_subnet_id>"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    },
+    "deploymentConfiguration": {
+        "maximumPercent": 100,
+        "minimumHealthyPercent": 0
+    }
+}
