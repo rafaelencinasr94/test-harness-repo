@@ -1,0 +1,34 @@
+pipeline:
+  name: branch test
+  identifier: branch_test
+  projectIdentifier: CI_NodeJs_Pipeline
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: test_branches
+        build: <+input>
+  stages:
+    - stage:
+        name: ci stage
+        identifier: ci_stage
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: echo "hello world"
